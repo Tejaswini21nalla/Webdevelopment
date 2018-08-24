@@ -1,0 +1,149 @@
+<html>
+   <head>
+    <title>REGISTER</title>
+	<style>
+	  body{
+        height:100%;
+		margin:0;
+		align: center;
+      }	  
+	 .background{
+         background-image:url("webdesign.jpeg");
+		 height:100%;
+		 background-position:center;
+		 background-repeat:no-repeat;
+		 background-size:cover;
+      }	
+     .register{
+	     background-color:white;
+		 height:500px;
+		 width:400px;
+		 position:relative;
+		 left:550px;
+		 top:100px;
+		 border-radius:20px;
+		 font-color:
+		 
+      }	 
+	  .registerheading{
+	     font-weight:bold;
+		 color:#01569E;
+		 
+		 
+		 
+	  }
+	  .subhead{
+	     font-size:130%;
+	     position:relative;
+		 left:50px;
+		 top:20px;
+	  }
+	  #enterhere{
+	      position:relative;
+		  left:10px;
+		  top:5px;
+	  }
+	  #enterhere1{
+	      position:relative;
+		  left:10px;
+		  top:5px;
+	  }
+	  #secret{
+	      position:relative;
+		  left:10px;
+		  top:5px;
+	  }
+	   #secret1{
+	      position:relative;
+		  left:10px;
+		  top:5px;
+	  }
+	  .registerbutton{
+	      position:relative;
+		  top:80px;
+		  left:150px;
+		  background-color:#00C621;
+          border: 30px;
+          color: white;
+          padding: 10px 15px;
+          text-align:center;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 2px 2px;
+	  
+	  }
+	  #newuser{
+	      position:relative;
+		  top:58px;
+		  left:105px;
+	  }
+      p{
+	  color: blue;
+	  position:relative;
+	  left:70px;
+	  }
+	</style>
+   
+   </head>
+   
+   <body>
+   
+    <div class="background" align:"center">
+	  <div class="register">
+	  <br>
+	     <p>New to this website?<p>
+	    <h1 id="registerheading"><em><center>REGISTER NOW!!</center></em></h1>
+	      <form>
+		  <div class="subhead">
+			  <span>Full name:</span>
+			  <br>
+			  <input id="enterhere" type="text" placeholder="Enter here:">
+			</div>
+			<br>
+		    <div class="subhead">
+			  <span>Enter Email:</span>
+			  <br>
+			  <input id="enterhere1" type="text" placeholder="eg:abcde@gmail.com">
+			</div>
+			<br>
+			<div class="subhead">
+			  <span>Enter new password:</span>
+			  <br>
+			  <input id="secret" type="password" placeholder="Enter here:">
+			</div>
+			<br>
+			<div class="subhead">
+			  <span>Re-enter new password:</span>
+			  <br>
+			  <input id="secret1" type="password" placeholder="Enter here:">
+			</div>
+			
+			<button id="submit" class="registerbutton" onclick="">register</button>
+			
+		  </form>
+		  <script type="text/javascript">
+		  document.getElementById("submit").onclick= function() {
+		  var x = document.getElementById("secret").value;
+		  var y = document.getElementById("secret1").value;
+		  var z = document.getElementById("enterhere").value;
+		  var a = document.getElementById("enterhere1").value;
+
+		  if(x == y){
+		  if(z.length===0||a.length===0){
+		  alert("enter name and email");
+		  }
+		  else{
+		  
+		  alert("successful");
+		  }
+		  }
+		  else{
+		  alert("passwords donot match!! please recheck..!");
+		  }
+		  }
+		  </script>
+	  </div>
+    </div>  
+   </body>
+
+</html>
