@@ -42,6 +42,11 @@
 		  left:10px;
 		  top:5px;
 	  }
+	  	  #enterhere1{
+	      position:relative;
+		  left:10px;
+		  top:5px;
+	  }
 	  .loginbutton{
 	      position:relative;
 		  top:80px;
@@ -62,12 +67,12 @@
 		  top:58px;
 		  left:105px;
 	  }
-	 
 	</style>
    
    </head>
    
    <body>
+   
     <div class="background">
 	  <div class="login">
 	    <h1 id="loginheading"><em><center>LOGIN!!</center></em></h1>
@@ -82,12 +87,21 @@
 			<div class="subhead">
 			  <span>Enter Password:</span>
 			  <br>
-			  <input id="enterhere" type="text" placeholder="Enter here:">
+			  <input id="enterhere1" type="password" placeholder="Enter here:">
 			</div>
 			<br>
-			<button class="loginbutton" onclick="">login</button>
-			<h4 id="newuser"><a href="register.html">New User??Register Here</a></h4> 
+			<button id="login" class="loginbutton" onclick="">login</button>
+			<h4 id="newuser"><a href="registerpage.html">New User??Register Here</a></h4> 
 		  </form>
+		  <script type="text/javascript">
+		   document.getElementById("login").onclick= function() {
+		   var z = document.getElementById("enterhere").value;
+		  var a = document.getElementById("enterhere1").value;
+		  if(z.length===0||a.length===0){
+		  alert("enter name and password");
+		  }
+		  }
+		  </script>
 	  </div>
     </div>  
    </body>
