@@ -1,0 +1,20 @@
+(function($){
+    $(document).ready(function(){
+        $(".navbar").show();
+
+        $(function(){
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>100)
+                    {
+                        $('.navbar').fadeIn();
+                    }
+                    else
+                    {
+                        $('.navbar').show();
+                    }
+                }
+            );
+        });
+    });
+}(jQuery));
